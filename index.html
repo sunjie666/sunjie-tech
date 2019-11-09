@@ -9,8 +9,10 @@
 <head>
 <meta charset="UTF-8">
 <!--UTF-8声明,以防乱码-->
-<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <!--适配低分辨率设备-->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!--尽量兼容IE浏览器-->
 <title>站长-孙杰</title>
 <!--标题-->
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
@@ -22,14 +24,11 @@
 <script src="//cdn.bootcss.com/mdui/0.4.3/js/mdui.min.js"></script>
 <!--调用mdui的js文件,如果你服务器带宽够大,可以把此链接下载到你的服务器,然后把第21行代码换为下列代码-->
 <!--<script src="/mdui.min.js"></script>-->
-<script type="text/javascript" src="//cdn.repository.webfont.com/wwwroot/js/wf/youziku.api.min.js"></script>
-<!--调用webfont,如果你服务器带宽够大,可以把此链接下载到你的服务器,然后把第24行代码换为下列代码-->
-<!--<script type="text/javascript" src="/youziku.api.min.js"></script>-->
 <link rel="stylesheet" href="//cdn.bootcss.com/mdui/0.4.3/css/mdui.min.css">
 <!--调用mdui的css文件,如果你服务器带宽够大,可以把此链接下载到你的服务器,然后把第27行代码换为下列代码-->
 <!--<link rel="stylesheet" href="/mdui.min.css">-->
 <style>
-body{padding-bottom:60px;background-position:center bottom;background-repeat:no-repeat;background-attachment:fixed}.nexmoe-item{margin:20px -8px 0!important;padding:15px!important;border-radius:5px;background-color:#fff;-webkit-box-shadow:0 .5em 3em rgba(161,177,204,.4);box-shadow:0 .5em 3em rgba(161,177,204,.4);background-color:#fff}.mdui-img-fluid,.mdui-video-fluid{border-radius:5px;border:1px solid #eee}.mdui-list{padding:0}.mdui-list-item{margin:0!important;border-radius:5px;padding:0 10px 0 5px!important;border:1px solid #eee;margin-bottom:10px!important}.mdui-list-item:last-child{margin-bottom:0!important}.mdui-list-item:first-child{border:none}.mdui-toolbar{width:auto;margin-top:60px!important}.mdui-appbar .mdui-toolbar{height:56px;font-size:16px}.mdui-toolbar>*{padding:0 6px;margin:0 2px;opacity:.5}.mdui-toolbar>.mdui-typo-headline{padding:0 16px 0 0}.mdui-toolbar>i{padding:0}.mdui-toolbar>a:hover,a.active,a.mdui-typo-headline{opacity:1}.mdui-container{max-width:980px}.mdui-list>.th{background-color:initial}.mdui-list-item>a{width:100%;line-height:48px}.mdui-toolbar>a{padding:0 16px;line-height:30px;border-radius:30px;border:1px solid #eee}.mdui-toolbar>a:last-child{opacity:1;background-color:#1e89f2;color:#ffff}@media screen and (max-width:980px){.mdui-list-item .mdui-text-right{display:none}.mdui-container{width:100%!important;margin:0}.mdui-toolbar>*{display:none}.mdui-toolbar>.mdui-typo-headline,.mdui-toolbar>a:last-child,.mdui-toolbar>i:first-child{display:block}}.t{box-shadow:0 11px 11px -4px #1b96c2;background:linear-gradient(to bottom,#3679eb 5%,#157294 100%);background-color:#3679eb;border-radius:10px;border:1px solid #0866d1;display:inline-block;cursor:pointer;color:#fff;font-family:Arial;font-size:17px;font-weight:700;font-style:italic;padding:10px 25px;text-decoration:none}.t:hover{background:linear-gradient(to bottom,#157294 5%,#3679eb 100%);background-color:#157294}.t:active{position:relative;top:1px}.y{width:85%;margin:20px auto;padding:5%;border-radius:37.5px margin-top: 1.125rem;margin-bottom:3.125rem;box-shadow:.5rem .875rem 2.375rem rgba(39,44,49,.06),.0625rem .1875rem .5rem rgba(39,44,49,.03);background-color:#fff;border-top-left-radius:1rem;border-top-right-radius:1rem;border-bottom-right-radius:1rem;border-bottom-left-radius:1rem}
+body{padding-bottom:60px;background-position:center bottom;background-repeat:no-repeat;background-attachment:fixed}.nexmoe-item{margin:20px -8px 0!important;padding:15px!important;border-radius:5px;background-color:#fff;-webkit-box-shadow:0 .5em 3em rgba(161,177,204,.4);box-shadow:0 .5em 3em rgba(161,177,204,.4);background-color:#fff}.mdui-img-fluid,.mdui-video-fluid{border-radius:5px;border:1px solid #eee}.mdui-list{padding:0}.mdui-list-item{margin:0!important;border-radius:5px;padding:0 10px 0 5px!important;border:1px solid #eee;margin-bottom:10px!important}.mdui-list-item:last-child{margin-bottom:0!important}.mdui-list-item:first-child{border:none}.mdui-toolbar{width:auto;margin-top:60px!important}.mdui-appbar .mdui-toolbar{height:56px;font-size:16px}.mdui-toolbar>*{padding:0 6px;margin:0 2px;opacity:.5}.mdui-toolbar>.mdui-typo-headline{padding:0 16px 0 0}.mdui-toolbar>i{padding:0}.mdui-toolbar>a:hover,a.active,a.mdui-typo-headline{opacity:1}.mdui-container{max-width:980px}.mdui-list>.th{background-color:initial}.mdui-list-item>a{width:100%;line-height:48px}.mdui-toolbar>a{padding:0 16px;line-height:30px;border-radius:30px;border:1px solid #eee}.mdui-toolbar>a:last-child{opacity:1;background-color:#1e89f2;color:#ffff}@media screen and (max-width:980px){.mdui-list-item .mdui-text-right{display:none}.mdui-container{width:100%!important;margin:0}.mdui-toolbar>*{display:none}.mdui-toolbar>.mdui-typo-headline,.mdui-toolbar>a:last-child,.mdui-toolbar>i:first-child{display:block}}.t{box-shadow:0 11px 11px -4px #1b96c2;background:linear-gradient(to bottom,#3679eb 5%,#157294 100%);background-color:#3679eb;border-radius:10px;border:1px solid #0866d1;display:inline-block;cursor:pointer;color:#fff;font-family:Arial;font-size:17px;font-weight:700;font-style:italic;padding:10px 25px;text-decoration:none}.t:hover{background:linear-gradient(to bottom,#157294 5%,#3679eb 100%);background-color:#157294}.t:active{position:relative;top:1px}.y{width:85%;margin:20px auto;padding:5%;border-radius:37.5px margin-top: 1.125rem;margin-bottom:3.125rem;box-shadow:.5rem .875rem 2.375rem rgba(39,44,49,.06),.0625rem .1875rem .5rem rgba(39,44,49,.03);background-color:#fff;border-top-left-radius:1rem;border-top-right-radius:1rem;border-bottom-right-radius:1rem;border-bottom-left-radius:1rem}p5{font-family:PingFang SC,"Segoe UI","Microsoft YaHei","wenquanyi micro hei","Hiragino Sans GB","Hiragino Sans GB W3","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue","Helvetica","Arial","sans-serif";font-size:16.5px;text-align:center};
 </style>
 <!--一大堆css文件,有点乱-->
 
@@ -70,7 +69,7 @@ body{padding-bottom:60px;background-position:center bottom;background-repeat:no-
 <br>
 <div class="y">
 	<script src="//v1.hitokoto.cn/?c=a&encode=js&select=%23hitokoto" defer="defer">获取失败</script>
-<!--这里引用了一言官方的AP,如72行报错,请忽略,只是调用链接过长而已I-->
+<!--这里引用了一言官方的API,如72行报错,请忽略,只是调用链接过长而已I-->
 <div style="text-align:center;">
 	<!--使文字居中-->
 	<a name="text"></a>
@@ -79,10 +78,9 @@ body{padding-bottom:60px;background-position:center bottom;background-repeat:no-
 <!--用多个br分行,可自行调整-->
 <div style="text-align:center;">
 <!--使文字居中-->
-<p3 id="hitokoto"  style="font-family:Open Sans;font-size:15px;text-align:center;">正在获取中=￣ω￣=</p3>
+<p5 id="hitokoto">正在获取中=￣ω￣=</p5>
 <!--由于调用了一言的js函数,<p>标签内的文字只在函数执行成功前时显示-->
-</div></div>
-<br>
+<br></div>
 <div class="y">
 	<a name="jieshao"></a>
 	<!--标记本位置,可直接访问 https://sunjie.tech/#jieshao 定位到此-->
@@ -93,19 +91,16 @@ body{padding-bottom:60px;background-position:center bottom;background-repeat:no-
 	<a href="#jieshao" class="t">详细资料</a>
 </div>
 <br><br>
-<p5 style="font-size:18px;text-align:center;">
-	<!--不要害怕,style="font-family:...那一堆是字体声明,只是为了字体更美观而已-->
+<p5>
 		我，重庆丰都人，出生于2007年8月5日,现12岁,就读于福州市三牧中学
 		</p5><br>
 		
-<p5 style="font-size:18px;text-align:center;">
-<!--不要害怕,style="font-family:...那一堆是字体声明,只是为了字体更美观而已-->
+<p5>
 	目前经营着近十个网站,在一些平台(如<a href="//space.bilibili.com/348967265" target="_blank">哔哩哔哩</a>) 小有名气
 	
 	</p5><br>
 	
-<p5 style="font-size:18px;text-align:center;">
-<!--不要害怕,style="font-family:...那一堆是字体声明,只是为了字体更美观而已-->
+<p5>
 	兴趣爱好:敲代码,看番,剪视频,还是个死肥宅,我的计算机生涯已经有 <span id="htmer_time">近3年</span> 了,真诚欢迎各同龄人才与我合作
 	
 	<br>
@@ -336,7 +331,8 @@ body{padding-bottom:60px;background-position:center bottom;background-repeat:no-
 
 	<div style="text-align:center;">
 		<!--使文字居中-->
-				<a href="/links" class="t" target="_blank" style="font-family: Microsoft YaHei,'Microsoft JhengHei'">点我查看全部鸣谢名单</a>
+				<a href="/links" class="t" target="_blank" style="font-family: Microsoft YaHei,'Microsoft JhengHei'">点我查看全部鸣谢名单</a><br><br>
+	<p5>[这是美国-github节点,服务器提供商为阿里云]</p5>
 		</div>
 	</div>
 		
@@ -345,12 +341,6 @@ body{padding-bottom:60px;background-position:center bottom;background-repeat:no-
 </div>
 
 <script src="/1.js" async="async"></script>
-
 <!--加载外部js并添加async组件使其最后加载,以免拖慢加载速度-->
-<script type="text/javascript">
-   //$webfont.load("body", "8da51d8d255a4aaea173a0e1a8433319", "HYWtH");
-   $webfont.load(".zt,p,.t,body,.mdui-card-primary-title,.mdui-card-primary-subtitle", "8da51d8d255a4aaea173a0e1a8433319", "HYWtH");
-   $webfont.draw();</script>
-<!--字体相关js-->
 </body>
 </html>
